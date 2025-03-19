@@ -1,0 +1,5 @@
+# Ignore all files in the utilities folder
+/utils
+
+# Ignore virtual environment
+/.venv
