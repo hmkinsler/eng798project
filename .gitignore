@@ -1,5 +1,11 @@
-# Ignore all files in the utilities folder
-/utils
-
-# Ignore virtual environment
-/.venv
+# Files and folders that are being ignored should show up as gray in your directory on the left side of the screen
+# Python-related & development files
+*.pyc
+*.pyo
+*.pyd
+*.env
+*__pycache__/
+*utils/
+.vscode/
+.venv/
+*__init__.py

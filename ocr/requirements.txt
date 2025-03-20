@@ -1,0 +1,12 @@
+# Make sure to activate your virtual environment before you install the dependencies in this file
+
+# You install the dependencies by running this in your terminal --> pip install -r requirements.txt
+# This will install all the dependencies listed in the requirements.txt file
+
+pdf2image
+opencv-python
+numpy
+pillow
+pytesseract
+# install Poppler for Windows and add /bin to PATH: https://github.com/oschwartz10612/poppler-windows/releases/
+# install Tesseract for Windows: https://github.com/UB-Mannheim/tesseract/wiki and ensure to include the path to the Tesseract executable in the PATH environment variable
