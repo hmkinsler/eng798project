@@ -48,11 +48,21 @@ sentiment_analysis <- letters %>%
   select(record_unit, date, sender_race, stance, event) %>%
   left_join(letter_sentiment)
 
-# Visualize sentiment by group
+# Visualize sentiment by year
+sentiment_analysis %>%
+  mutate(year = year(date)) %>% 
+  group_by(year) %>%
+  summarize(avg_sentiment = mean(sentiment_score, na.rm = TRUE)) %>%
+  ggplot(aes(x = reorder(year, avg_sentiment), y = avg_sentiment)) +
+  geom_col() +
+  coord_flip() +
+  labs(title = "Average Sentiment by Year", x = "Year", y = "Average Sentiment")
+
+# Visualize sentiment by stance
 sentiment_analysis %>%
   group_by(stance) %>%
   summarize(avg_sentiment = mean(sentiment_score, na.rm = TRUE)) %>%
-  ggplot(aes(x = reorder(stance, avg_sentiment), y = avg_sentiment, color = stance)) +
+  ggplot(aes(x = reorder(stance, avg_sentiment), y = avg_sentiment)) +
   geom_col() +
   coord_flip() +
   labs(title = "Average Sentiment by Stance", x = "Stance", y = "Average Sentiment")
