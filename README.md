@@ -3,6 +3,8 @@ Shared repository for Brody McCurdy and Haley M. Kinsler's final project for ENG
 
 This repository includes assignment files related to the project, including a project charter that outlines the goals of the project, a research proposal and bibliography that details our initial research questions and sources of scholarship that orient our methods and analytic approaches, as well as the data and scripts that will be used to clean and analyze our data.
 
+![Screenshot of the repository page for the GitHub repository that was developed for this project](/site_design/assets/respository_screenshot.png)
+
 Project Documentation Files [CLICK HERE](https://github.com/hmkinsler/eng798project/tree/main/project_documentation)
 
 Files For Data Scraping [CLICK HERE](https://github.com/hmkinsler/eng798project/tree/main/data_scraping)
