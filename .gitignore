@@ -8,3 +8,6 @@
 *utils/
 .vscode/
 .venv/
+
+# R project files
+*.Rhistory
